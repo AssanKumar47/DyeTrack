@@ -9,7 +9,7 @@ import { toast } from '@/components/ui/sonner';
 // API base URL
 const API_BASE_URL = 'http://localhost:5000/api';
 
-// Function to make request using XMLHttpRequest (to avoid any fetch recursion issues)
+
 function makeRequest(url, method = 'GET', data = null) {
   return new Promise((resolve, reject) => {
     const xhr = new XMLHttpRequest();
@@ -37,7 +37,6 @@ function makeRequest(url, method = 'GET', data = null) {
   });
 }
 
-// Fallback data if API fails
 const COLORS = ['#f59e0b', '#6d28d9', '#10b981', '#3b82f6'];
 
 const CustomerDashboard: React.FC = () => {
